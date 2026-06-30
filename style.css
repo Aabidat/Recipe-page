@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #faf3e8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #2b1b12;
+  font-family: "Lato", sans-serif;
+}
+.main {
+  padding: 2rem;
+  background-color: #ffffff;
+  max-width: 600px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+header {
+  font-size: 0.95rem;
+}
+/* image */
+img {
+  border-radius: 20px;
+  width: 530px;
+  height: 300px;
+  animation: fadeZoom 1s ease forwards;
+}
+
+ul,
+ol {
+  padding-left: 1.5rem;
+}
+h1,
+h2 {
+  color: #9a2d3f;
+  font-family: "Playfair Display", sans-serif;
+}
+
+/* Hedaer h1 and p layout */
+
+.init {
+  margin-top: 30px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.2s;
+}
+
+.init p {
+  padding: 1rem;
+}
+
+/* preparation time layout */
+
+.prep-time {
+  margin-top: 20px;
+  background-color: #fdebc8;
+  padding: 1rem;
+  border-radius: 20px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.3s;
+  font-size: 0.95rem;
+}
+
+.prep-time h2 {
+  font-size: 19px;
+  color: #f6c667;
+}
+
+p,
+ul,
+ol,
+table {
+  line-height: 1.6;
+}
+
+/* Ingredients layout */
+
+.ingredients {
+  margin-top: 20px;
+  border-bottom: 1px solid #dedbdb;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.4s;
+  font-size: 0.95rem;
+}
+
+.ingredients ul {
+  padding: 1rem;
+}
+
+/* Instruction layout */
+.instruction {
+  margin-top: 20px;
+  border-bottom: 1px solid #dedbdb;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.5s;
+  font-size: 0.95rem;
+}
+
+.instruction ol {
+  padding: 1rem;
+}
+
+/* Nutrition layout */
+.nutrition {
+  margin-top: 20px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.6s;
+  font-size: 0.95rem;
+}
+
+.nutrition,
+table,
+p {
+  padding: 1rem;
+}
+
+table {
+  width: 100%;
+  box-shadow: 0px 4px 10px rgb(0, 0, 0, 0.15);
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeUp 0.6s ease forwards;
+  animation-delay: 0.7s;
+}
+
+th {
+  text-align: left;
+}
+
+td {
+  border-bottom: 1px solid #dedbdb;
+}
+
+/* footer */
+footer {
+  margin-top: 10px;
+  padding: 1rem;
+  text-align: center;
+  border-top: 1px solid #dedbdb;
+
+}
+
+.end {
+  font-size: 0.85rem;
+}
+
+/* animations */
+
+@keyframes fadeZoom {
+  from {
+    opacity: 0;
+    transform: scale(1.05);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
